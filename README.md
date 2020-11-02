@@ -1,0 +1,2 @@
+# blue-team
+Kickstarter dataset 
