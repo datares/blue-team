@@ -1,18 +1,50 @@
 Our central research question was to determine what factors make up a successful Kickstarter campaign. 
 
-We set out to answer questions about what factors are important to a successful project: how long, on average, does it take for a project to reach its goal and how does the chance of success change with time? What are the most common project categories and are they necessarily the most successful categories? How does the funding goal amount relate to the likelihood of campaign success? Are successful projects mostly supported by a large crowd of small donations or a few backers with substantial contributions?
+We set out to answer questions about what factors are important to a successful project: 
+how long, on average, does it take for a project to reach its goal and how does the chance of success change with time? 
+What are the most common project categories and are they necessarily the most successful categories? 
+How does the funding goal amount relate to the likelihood of campaign success? 
+Are successful projects mostly supported by a large crowd of small donations or a few backers with substantial contributions?
 
 # Time elapsed between launch date and date the goal was reached
-Out of successful campaigns, the minimum time elapsed is 1 day. Only 64 out of the 247037 successful projects, or 0.026%, reached the goal in that time. The maximum is 92 days, and only 10 projects, or 0.004%, reached their goal on the 92nd day. The range from 1 to 30 days contains the lower 25% of the data; similarly, the range from 34 to 92 days contains the upper 25% of the data. 50% of the projects reached their goal funding 30-34 days after launching the project. 
-39.6% of successful campaigns were completed in one day, on day 30. The mode of the distribution is 30 days, and the median time elapsed is 30 days. The mode time is also 30 days. The median time elapsed for the top main category, "Film & Video" , is 30 days and the median elapsed time for the top (more specific) category, "Product Design" , is also 30 days. It appears that 30 days is the magic number that goals are reached on. 64.54% of successful campaigns were completed in the first 30 days. To maximize success, campaign organizers should refrain from setting a goal date past 60 days of the initial release since a shorter time frame helps a campaign maintain a sense of urgency. 
+Out of successful campaigns, the minimum time elapsed is 1 day. Only 64 out of the 247037 successful projects, or 0.026%, reached the goal in that time. 
+The maximum is 92 days, and only 10 projects, or 0.004%, reached their goal on the 92nd day. 
+The range from 1 to 30 days contains the lower 25% of the data; similarly, the range from 34 to 92 days contains the upper 25% of the data. 
+50% of the projects reached their goal funding 30-34 days after launching the project. 
+39.6% of successful campaigns were completed in one day, on day 30. The mode of the distribution is 30 days, and the median time elapsed is 30 days. 
+The mode time is also 30 days. The median time elapsed for the top main category, "Film & Video" , is 30 days and the median elapsed time for the top (more specific) category, "Product Design" , is also 30 days. 
+It appears that 30 days is the magic number that goals are reached on. 64.54% of successful campaigns were completed in the first 30 days. To maximize success, campaign organizers should refrain from setting a goal date past 60 days of the initial release since a shorter time frame helps a campaign maintain a sense of urgency. 
 
 # Categories 
-The analysis uses tapply function, which allows the subsetting of data by factors before calculating each subgroup’s statistics. The top three most popular categories (defined by the number of projects) are Film & Video, Music, and Publishing, accounting for 41% of all projects. Among the projects in these categories, 38.5% succeeded, whereas the projects from the other categories achieved a success rate of 33.1%. To explain why there is no significant difference in success rate, we note that the projects from the top 3 categories do not receive as much attention as others (ranking only 7th, 6th, and 9th, respectively, in the median number of backers per project). Individual projects from these categories are drowned out by others and do not receive as much attention from potential backers; in other words, they fail to take full advantage of crowdfunding. The most successful categories (defined by success rate) are Dance, Theater, and Comics, with a success rate of 62%, 59.9%, and 54%. Dance projects make up less than 1% of all projects from the data set yet have the highest success rate. A plausible explanation is the category’s niche. Although there are very few creators on Kickstarter promoting dance compared to other categories, their projects are frequently recognized and supported by interested patrons. Among all categories, those related to popular culture and performing arts have the highest success rates. The overall takeaway from the analysis is that projects related to performing arts and popular culture receive adequate attention and support on Kickstarter and are more likely to succeed. However, individual niche projects may also have a higher chance of reaching their funding goals by appealing to specific patron groups.
+The analysis uses tapply function, which allows the subsetting of data by factors before calculating each subgroup’s statistics. 
+The top three most popular categories (defined by the number of projects) are Film & Video, Music, and Publishing, accounting for 41% of all projects. 
+Among the projects in these categories, 38.5% succeeded, whereas the projects from the other categories achieved a success rate of 33.1%. 
+To explain why there is no significant difference in success rate, we note that the projects from the top 3 categories do not receive as much attention as others (ranking only 7th, 6th, and 9th, respectively, in the median number of backers per project). 
+Individual projects from these categories are drowned out by others and do not receive as much attention from potential backers; in other words, they fail to take full advantage of crowdfunding. 
+The most successful categories (defined by success rate) are Dance, Theater, and Comics, with a success rate of 62%, 59.9%, and 54%. 
+Dance projects make up less than 1% of all projects from the data set yet have the highest success rate. 
+A plausible explanation is the category’s niche. Although there are very few creators on Kickstarter promoting dance compared to other categories, their projects are frequently recognized and supported by interested patrons. 
+Among all categories, those related to popular culture and performing arts have the highest success rates. 
+The overall takeaway from the analysis is that projects related to performing arts and popular culture receive adequate attention and support on Kickstarter and are more likely to succeed. 
+However, individual niche projects may also have a higher chance of reaching their funding goals by appealing to specific patron groups.
 
 # Funding goal
-Across all projects in the dataset, the lowest funding goal was $0.01, and the highest funding goal was $166,361,391. (This extremely expensive project was a food project having to do with paleo brownies. It ultimately received no funding and failed.)The median funding goal is $5,500, and the mean funding goal is $45,454, indicating that the distribution is right-skewed. Splitting the projects by category, technology projects had both the highest mean and median funding goals. Dance projects had the lowest mean funding goal, and crafts projects had the lowest mean funding goal. When comparing successful campaigns to failed campaigns, for every category the median funding goal of failed campaigns was higher than that of successful campaigns. Overall, successful projects have kept funding goals lower, around $5000 or less for most categories, but up to $10,000 or more for tech products. For a greater chance of success, creators should set goals for the minimum amount it will take to execute the project, as suggested by Kickstarter in their creator guidelines.
+Across all projects in the dataset, the lowest funding goal was $0.01, and the highest funding goal was $166,361,391. 
+(This extremely expensive project was a food project having to do with paleo brownies. It ultimately received no funding and failed.)
+The median funding goal is $5,500, and the mean funding goal is $45,454, indicating that the distribution is right-skewed. 
+Splitting the projects by category, technology projects had both the highest mean and median funding goals. 
+Dance projects had the lowest mean funding goal, and crafts projects had the lowest mean funding goal. 
+When comparing successful campaigns to failed campaigns, for every category the median funding goal of failed campaigns was higher than that of successful campaigns. 
+Overall, successful projects have kept funding goals lower, around $5000 or less for most categories, but up to $10,000 or more for tech products. 
+For a greater chance of success, creators should set goals for the minimum amount it will take to execute the project, as suggested by Kickstarter in their creator guidelines.
 
 
 # Number of backers
-The third quartile of the number of backers for successful projects was 167 backers, with a large range as the maximum number of backers for successful projects is 219382 backers. The 95th percentile is 885. For the failed + cancelled projects, the third quartile was at 13 and the 95th percentile was at 72 backers. For the “suspended + live + undefined” backers, the third quartile was at 6 backers and the 95th percentile was at 122 backers. This indicates that the successful projects in general had a greater number of backers. Furthermore, the histogram of all three categories shows that for the failed + cancelled and live + suspended + undefined projects, the data is more right skewed than the successful projects.One anomalie that was noted is that the minimum number of backers was zero for successful projects, however, this accounts for a relatively small percentage, 0.078%, of the successful projects. Hence, we can conclude that the successful projects generally relied on crowdfunding.
+The third quartile of the number of backers for successful projects was 167 backers, with a large range as the maximum number of backers for successful projects is 219382 backers. 
+The 95th percentile is 885. For the failed + cancelled projects, the third quartile was at 13 and the 95th percentile was at 72 backers. 
+For the “suspended + live + undefined” backers, the third quartile was at 6 backers and the 95th percentile was at 122 backers. 
+This indicates that the successful projects in general had a greater number of backers. 
+Furthermore, the histogram of all three categories shows that for the failed + cancelled and live + suspended + undefined projects, the data is more right skewed than the successful projects. 
+One anomaly that was noted is that the minimum number of backers was zero for successful projects, however, this accounts for a relatively small percentage, 0.078%, of the successful projects. 
+Hence, we can conclude that the successful projects generally relied on crowdfunding.
 
