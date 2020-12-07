@@ -1,4 +1,4 @@
-#using R
+#Using R
 
 #Time Elapsed
 library(ggplot2)
@@ -17,10 +17,7 @@ meanline <- ggplot(success, aes(time_in_days)) + geom_histogram(binwidth = 2, fi
 print(meanline + ggtitle("Time for successful campaigns to reach goal with mean line") + labs(y= "Number of campaigns", x= "Time in days"))
 
 
-
-
-
-#Backers:
+#Backers
 kickstarter_df <- read.csv("ks-projects-201801.csv")
 successful_df <- kickstarter_df[kickstarter_df$state=="successful",]
 summary(successful_df$backers)
@@ -40,6 +37,8 @@ legend("topright",c("successful", "canceled+failed", "live+suspended+undefined")
 sum_of_backers <- sum(successful_df$backers==0)
 length_of_successful_backers <- length(successful_df$backers)
 (sum_of_backers*100)/length_of_successful_backers
+
+
 
 # Categories
 ks <- read.csv("ks-projects-201801.csv")
@@ -106,6 +105,7 @@ ggplot(graphic_df, aes(x = factor(category, levels = colnames(cat_p)[-1]),
         scale_fill_manual(values = c("dodgerblue4")) +
         coord_flip()
 
+
 #Funding Goal
 ks <- read.csv('ksfinaldata.csv')
 ks_summary <- ks %>% group_by(main_category) %>% summarise(mean_goal = mean(usd_goal_real), median_goal = median(usd_goal_real))
@@ -128,6 +128,4 @@ compare_barplot <- ggplot(data=ks_summary2, aes(x=main_category, y=median_goal, 
   theme(axis.text.x = element_text(angle=90)) +
   ggtitle('Median Funding Goal by Category') +
   xlab('Category') + ylab('Goal in USD')
-
-
 
