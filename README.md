@@ -34,6 +34,6 @@ Other variables that our team analyzed included: comparisons of the time elapsed
 Our team used R to clean data, perform analysis, and create visualizations. For exploratory data analysis (EDA), the package dplyr was used, and for visualizations, the package ggplot2 was used. 
 
 # Analysis and Code
-The analysis can be found at `[analysis/]`https://github.com/amytang-ml/blueteam/tree/main/analysis. 
+The analysis can be found at `[analysis/]` https://github.com/datares/blue-team/tree/main/analysis.
 Each member of our team contributed to developing visualizations for our article. 
 
