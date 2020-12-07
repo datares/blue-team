@@ -12,8 +12,10 @@ The maximum is 92 days, and only 10 projects, or 0.004%, reached their goal on t
 The range from 1 to 30 days contains the lower 25% of the data; similarly, the range from 34 to 92 days contains the upper 25% of the data. 
 50% of the projects reached their goal funding 30-34 days after launching the project. 
 39.6% of successful campaigns were completed in one day, on day 30. The mode of the distribution is 30 days, and the median time elapsed is 30 days. 
-The mode time is also 30 days. The median time elapsed for the top main category, "Film & Video" , is 30 days and the median elapsed time for the top (more specific) category, "Product Design" , is also 30 days. 
-It appears that 30 days is the magic number that goals are reached on. 64.54% of successful campaigns were completed in the first 30 days. To maximize success, campaign organizers should refrain from setting a goal date past 60 days of the initial release since a shorter time frame helps a campaign maintain a sense of urgency. 
+The mode time is also 30 days. 
+The median time elapsed for the top main category, "Film & Video" , is 30 days and the median elapsed time for the top (more specific) category, "Product Design" , is also 30 days. 
+It appears that 30 days is the magic number that goals are reached on. 64.54% of successful campaigns were completed in the first 30 days. 
+To maximize success, campaign organizers should refrain from setting a goal date past 60 days of the initial release since a shorter time frame helps a campaign maintain a sense of urgency. 
 
 # Categories 
 The analysis uses tapply function, which allows the subsetting of data by factors before calculating each subgroup’s statistics. 
