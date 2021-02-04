@@ -1,7 +1,7 @@
 
 # What factors make a Kickstarter campaign successful?
 
-This repository provides explanations of the data analysis process for the DataRes article "What factors do successful Kickstarter campaigns tend to possess? (INSERT URL)", published [INSERT DATE]. Please check out our article, which contains visualizations and insights about Kickstarter campaigns.
+This repository provides explanations of the data analysis process for the DataRes article "What factors do successful Kickstarter campaigns tend to possess?" Please check out our article, which contains visualizations and insights about Kickstarter campaigns: https://ucladatares.medium.com/uncovering-what-traits-make-a-kickstarter-campaign-successful-dd4b62df9eb4
 Contributors: Raymond Bai, Samantha Chung, Emily Hou, Amy Tang
 
 # Data
